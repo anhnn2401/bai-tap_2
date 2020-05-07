@@ -1,12 +1,14 @@
 .header-container {
-  display: flex;
-  justify-content: space-between;
+  background-color: #fff;
+  width: 100%;
   top:0;
   left: 0;
   position: fixed;
   z-index: 1;
-  background-color: #fff;
-  width: 100%;
+  @include breakpoint(1199) {
+    display: flex;
+    justify-content: space-between;
+  }
   @include breakpoint(767) {
     height: 80px;
   }
@@ -24,6 +26,7 @@
   }
   .menu {
     display: inline-block;
+    float: right;
     text-transform: uppercase;
     background-color: #e2494b;
     border-radius: 10px;
@@ -39,23 +42,25 @@
         display: none;
       }
     }
-    .ulmenu li {
-      float: left;
-      display: inline-block;
-      margin: 0 10px;
-      line-height: 52px;
-      @include breakpoint(767) {
-        margin: 5px 5px;
-        line-height: unset;
-      }
-      @include breakpoint(450) {
-        margin: 0 15px;
-      }
-      .munua {
-        color: #fff;
-        &:hover,
-        &:active {
-          color: #ee9395;
+    .ulmenu {
+      .li-menu {
+        float: left;
+        display: inline-block;
+        margin: 0 10px;
+        line-height: 52px;
+        @include breakpoint(767) {
+          margin: 5px 5px;
+          line-height: unset;
+        }
+        @include breakpoint(450) {
+          margin: 0 15px;
+        }
+        .menu-a {
+          color: #fff;
+          &:hover,
+          &:active {
+            color: #ee9395;
+          }
         }
       }
     }
