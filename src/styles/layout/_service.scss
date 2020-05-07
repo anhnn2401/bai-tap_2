@@ -4,8 +4,8 @@
     margin: 40px auto;
   }
   .container-ser {
-    display: flex;
-    justify-content: space-between;
+    @include flexbox();
+    @include justify-content(space-between);
     margin: 20px 0;
     @include breakpoint(450) {
       display: block;
