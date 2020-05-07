@@ -17,7 +17,7 @@
     display: inline-block;
     margin: 20px;
     .imglogo {
-      @include breakpoint(450) {
+      @include breakpoint(480) {
         width: 100%;
       }
     }
@@ -35,25 +35,23 @@
     @include breakpoint(767) {
       margin: 0;
     }
-    .ulmenu {
+    .list-menu {
       @include breakpoint(767) {
         display: none;
       }
-    }
-    .ulmenu {
       .li-menu {
         float: left;
         display: inline-block;
         margin: 0 10px;
         line-height: 52px;
         @include breakpoint(767) {
-          margin: 5px 5px;
+          margin: 5px 10px;
           line-height: unset;
         }
-        @include breakpoint(450) {
-          margin: 0 15px;
+        @include breakpoint(480) {
+          margin: 0 5px;
         }
-        .menu-a {
+        .menu-link {
           color: #fff;
           &:hover,
           &:active {
@@ -64,7 +62,7 @@
     }
   }
 }
-.icon {
+.menu-item {
   font-size: 50px;
   display: none;
   padding: 0;

@@ -1,9 +1,9 @@
 function myFunction() {
-  var x = document.getElementById("idulmenu");
-  if (x.className === "ulmenu") {
-    x.className += " responsive-menu";
+  var btnmenu = document.getElementById("idulmenu");
+  if (btnmenu.className === "list-menu") {
+    btnmenu.className += " responsive-menu";
   }
   else {
-    x.className = "ulmenu";
+    btnmenu.className = "list-menu";
   }
 }
