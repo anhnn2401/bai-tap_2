@@ -20,7 +20,7 @@
     position: absolute;
     top: -27px;
     left: 50%;
-    transform: translateX(-50%);
+    @include transform(translateX(-50%));
     font-size: 18px;
     color: #fff;
     border: 1px solid #e2494b;
