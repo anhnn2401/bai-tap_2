@@ -5,10 +5,8 @@
   left: 0;
   position: fixed;
   z-index: 1;
-  @include breakpoint(1199) {
-    display: flex;
-    justify-content: space-between;
-  }
+  @include flexbox();
+  @include justify-content(space-between);
   @include breakpoint(767) {
     height: 80px;
   }
