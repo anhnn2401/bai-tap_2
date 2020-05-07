@@ -6,7 +6,7 @@
     position: absolute;
     top: -27px;
     left: 50%;
-    transform: translateX(-50%);
+    @include transform(translateX(-50%));
     font-size: 18px;
     color: #fff;
     border: 1px solid #e2494b;
@@ -60,9 +60,6 @@
     .name {
       margin-top: 20px;
       margin-bottom: 10px;
-      .span-name {
-        font-weight: bold;
-      }
       @include breakpoint(450) {
         margin: 0;
       }
