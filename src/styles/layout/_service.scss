@@ -1,0 +1,65 @@
+.sevices {
+  margin: 70px auto;
+  @include breakpoint(450) {
+    margin: 40px auto;
+  }
+  .container-ser {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    @include breakpoint(450) {
+      display: block;
+    }
+    .content-container {
+      width: 33.33%;
+      padding: 5px;
+      @include breakpoint(450) {
+        width: 100%;
+      }
+    }
+    .image-ser {
+      display: inline-block;
+    }
+    .h3-ser {
+      display: inline;
+      font-size: 18px;
+      font-weight: bold;
+      margin-left: 15px;
+      color: #666666;
+      @include breakpoint(767) {
+        display: block;
+        margin-left: 0;
+      }
+    }
+    .p-ser {
+      color: #979797;
+      margin: 15px 0;
+      text-align: left;
+    }
+    .link-ser {
+      color: #e2494b;
+      font-size: 15px;
+    }
+  }
+}
+.div-h2 {
+  position: relative;
+  border-top: 2px solid #e2e2e2;
+  margin-top: 20px;
+  .h2-player {
+    position: absolute;
+    top: -27px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    color: #fff;
+    border: 1px solid #e2494b;
+    border-radius: 5px;
+    background-color: #e2494b;
+    width: 180px;
+    text-align: center;
+    margin: 10px auto;
+    text-transform: uppercase;
+    padding: 5px 20px;
+  }
+}
