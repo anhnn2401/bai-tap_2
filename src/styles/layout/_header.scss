@@ -16,7 +16,7 @@
   .logo {
     display: inline-block;
     margin: 20px;
-    img {
+    .imglogo {
       @include breakpoint(450) {
         width: 100%;
       }
