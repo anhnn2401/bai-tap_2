@@ -1,5 +1,5 @@
 function myFunction() {
-  var btnmenu = document.getElementById("idulmenu");
+  var btnmenu = document.getElementById("idlistmenu");
   if (btnmenu.className === "list-menu") {
     btnmenu.className += " responsive-menu";
   }
