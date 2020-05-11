@@ -22,15 +22,17 @@
   <!-- include styles.html -->
   <!-- build:css(.) style/vendor.min.css -->
 <link rel="stylesheet" type="text/css" media="screen" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="node_modules/slick-carousel/slick/slick.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="node_modules/slick-carousel/slick/slick-theme.css" />
 <!-- endbuild -->
 <!-- build:css(.tmp) style/style.min.css -->
 <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
 <!-- endbuild -->
 </head>
 <body>
-  <div class="wrapper">
+
     <!-- include header.html -->
-    <header class="header-container">
+<header class="header-container">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -39,9 +41,25 @@
     </div>
   </div>
 </header>
-
+<div id="homepage" class="homepage container">
+  <h1 class="wrap-content">“ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam
+erat. In fringilla massa ut nisi ullamcorper pellentesque „</h1>
+  <div class="slide_home">
+    <div class="slide">
+  <img src="images/slide_ima.png" alt="slide-image">
+</div><div class="slide">
+  <img src="images/slide_ima.png" alt="slide-image">
+</div><div class="slide">
+  <img src="images/slide_ima.png" alt="slide-image">
+</div><div class="slide">
+  <img src="images/slide_ima.png" alt="slide-image">
+</div><div class="slide">
+  <img src="images/slide_ima.png" alt="slide-image">
+</div>
+  </div>
+</div>
     <!-- include banner.html -->
-    <section class="banner-container">
+<section class="banner-container">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -51,18 +69,10 @@
   </div>
 </section>
 
-    <main class="main-container">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h4 class="title-block">HTML Boilerplate</h4>
-          </div>
-        </div>
-      </div>
-    </main>
+
 
     <!-- include footer.html -->
-    <footer class="footer-container">
+<footer class="footer-container">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -71,12 +81,13 @@
     </div>
   </div>
 </footer>
-  </div>
+
 
   <!-- include scripts.html -->
   <!-- build:js(.) script/vendor.min.js -->
 <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
 <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="node_modules/slick-carousel/slick/slick.min.js"></script>
 <!-- endbuild -->
 <!-- build:js script/script.min.js -->
 <script type="text/javascript" src="scripts/script.js"></script>
