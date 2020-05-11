@@ -16,14 +16,17 @@
       @include breakpoint(450) {
         width: 100%;
       }
+      .wrap-image {
+        display: flex;
+        margin: 10px 0;
+      }
     }
     .image-ser {
       display: inline-block;
     }
     .h3-ser {
-      display: inline;
       font-size: 18px;
-      font-weight: bold;
+      font-weight: 700;
       margin-left: 15px;
       color: #666666;
       @include breakpoint(767) {
@@ -31,10 +34,8 @@
         margin-left: 0;
       }
     }
-    .p-ser {
+    .wrap-service {
       color: #979797;
-      margin: 15px 0;
-      text-align: left;
     }
     .link-ser {
       color: #e2494b;
@@ -43,23 +44,19 @@
   }
 }
 .div-h2 {
-  position: relative;
+  display: flex;
+  justify-content: center;
   border-top: 2px solid #e2e2e2;
-  margin-top: 20px;
-  .h2-player {
-    position: absolute;
-    top: -27px;
-    left: 50%;
-    @include transform(translateX(-50%));
+  position: relative;
+  .title-service {
     font-size: 18px;
     color: #fff;
     border: 1px solid #e2494b;
     border-radius: 5px;
     background-color: #e2494b;
-    width: 180px;
-    text-align: center;
-    margin: 10px auto;
+    padding: 10px 20px;
+    position: absolute;
+    top: -24px;
     text-transform: uppercase;
-    padding: 5px 20px;
   }
 }
