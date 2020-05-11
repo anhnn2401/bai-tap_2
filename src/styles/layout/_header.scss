@@ -7,12 +7,6 @@
   z-index: 1;
   @include flexbox();
   @include justify-content(space-between);
-  @include breakpoint(767) {
-    height: 80px;
-  }
-  @include breakpoint(450) {
-    height: auto;
-  }
   .logo {
     display: inline-block;
     margin: 20px;
@@ -23,8 +17,6 @@
     }
   }
   .menu {
-    display: inline-block;
-    float: right;
     text-transform: uppercase;
     background-color: #e2494b;
     border-radius: 10px;
@@ -39,19 +31,16 @@
       @include breakpoint(767) {
         display: none;
       }
-      .li-menu {
-        float: left;
+      .item-menu {
         display: inline-block;
         margin: 0 10px;
         line-height: 52px;
         @include breakpoint(767) {
-          margin: 5px 10px;
-          line-height: unset;
+          display: block;
+          margin: 0;
+          padding: 1%;
         }
-        @include breakpoint(480) {
-          margin: 0 5px;
-        }
-        .menu-link {
+        .item-link {
           color: #fff;
           &:hover,
           &:active {
@@ -62,21 +51,55 @@
     }
   }
 }
-.menu-item {
-  font-size: 50px;
-  display: none;
-  padding: 0;
+.open {
+  display: block !important;
+  width: 100%;
+  @include breakpoint(767) {
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e2494b;
+    position: fixed;
+  }
+}
+.list-menu ~ .btn-open-menu {
+  width: 30px;
+  height: 3px;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 25px;
+  right: 5px;
+  background-color: #ccc;
+  display: none;
   @include breakpoint(767) {
     display: block;
   }
-  @include breakpoint(350) {
-    font-size: 35px;
+  &:before {
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background-color: #ccc;
+    content: '';
+  }
+  &:after {
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    top: -10px;
+    right: 0;
+    background-color: #ccc;
+    content: '';
   }
 }
-.responsive-menu {
-  display: block !important;
-  width: 85%;
+.list-menu.open ~ .btn-open-menu {
+  transform: rotate(45deg);
+  &:before {
+    top: 0px;
+  }
+  &:after {
+    top: 0;
+    transform: rotate(90deg);
+  }
 }
