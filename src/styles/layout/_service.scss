@@ -1,21 +1,13 @@
 .sevices {
   margin: 70px auto;
-  @include breakpoint(450) {
+  @include breakpoint(480) {
     margin: 40px auto;
   }
   .container-ser {
     @include flexbox();
     @include justify-content(space-between);
     margin: 20px 0;
-    @include breakpoint(450) {
-      display: block;
-    }
     .content-container {
-      width: 33.33%;
-      padding: 5px;
-      @include breakpoint(450) {
-        width: 100%;
-      }
       .wrap-image {
         display: flex;
         margin: 10px 0;
@@ -23,24 +15,37 @@
       }
     }
     .image-ser {
-
+      &:hover {
+        @include transform(scale(1.5));
+        transition: all 2s;
+      }
     }
     .h3-ser {
       font-size: 18px;
       font-weight: 700;
       margin-left: 15px;
       color: #666666;
-      @include breakpoint(767) {
-        display: block;
-        margin-left: 0;
+      &:hover {
+        color: #000;
+      }
+      @include breakpoint(991) {
+        margin-left: 5px;
+        font-size: 15px;
       }
     }
     .wrap-service {
       color: #979797;
+      @include breakpoint(767) {
+        font-size: 15px;
+      }
     }
     .link-ser {
       color: #e2494b;
       font-size: 15px;
+      &:hover {
+        color: #ff0000;
+        font-weight: 700;
+      }
     }
   }
 }
