@@ -7,3 +7,6 @@ $('.slide_home').slick({
   adaptiveHeight: true,
   slidesToScroll: 1
 });
+$('.btn-open-menu').on('click', function(){
+  $('.list-menu').toggleClass('open')
+})
