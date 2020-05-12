@@ -1,0 +1,53 @@
+.homepage {
+  margin-top: 95px;
+  border-top: 2px solid #e2e2e2;
+  .wrap-content {
+    display: block;
+    font-size: 22px;
+    text-align: center;
+    margin: 25px auto;
+    color: #333333;
+    @include breakpoint(991) {
+      margin: 15px auto;
+    }
+    @include breakpoint(767) {
+      width: 100%;
+    }
+    @include breakpoint(480) {
+      font-size: 14px;
+    }
+  }
+  .slide_home {
+    width: 960px;
+    margin: 30px auto;
+    @include breakpoint(1199) {
+      width: 100%;
+      margin: 0 auto;
+    }
+    .slick-slide img {
+      width: 100%;
+    }
+    .slick-dots {
+      bottom: -40px;
+      li button:before {
+        font-size: 14px;
+        background-color: #000;
+        border: 1px solid #000;
+        border-radius: 50%;
+        @include breakpoint(480) {
+          font-size: 6px;
+          border: none;
+          top: -10px;
+          height: auto;
+          line-height: 0;
+        }
+      }
+      li.slick-active button:before {
+        color: #fff;
+        @include breakpoint(480) {
+          color: #000;
+        }
+      }
+    }
+  }
+}

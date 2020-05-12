@@ -1,13 +1,10 @@
 .sevices {
-  margin: 70px auto;
-  @include breakpoint(480) {
-    margin: 40px auto;
-  }
-  .container-ser {
+  margin: 20px auto;
+  .block-services {
     @include flexbox();
     @include justify-content(space-between);
     margin: 20px 0;
-    .content-container {
+    .wrap-services {
       .wrap-image {
         display: flex;
         margin: 10px 0;
@@ -17,10 +14,10 @@
     .image-ser {
       &:hover {
         @include transform(scale(1.5));
-        transition: all 2s;
+        @include transition(2s);
       }
     }
-    .h3-ser {
+    .title-service {
       font-size: 18px;
       font-weight: 700;
       margin-left: 15px;
@@ -33,7 +30,7 @@
         font-size: 15px;
       }
     }
-    .wrap-service {
+    .desc-service {
       color: #979797;
       @include breakpoint(767) {
         font-size: 15px;
@@ -50,8 +47,8 @@
   }
 }
 .block-title {
-  display: flex;
-  justify-content: center;
+  @include flexbox();
+  @include justify-content(center);
   position: relative;
   &:after {
     content: '';
