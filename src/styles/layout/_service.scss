@@ -1,17 +1,17 @@
-.sevices {
+.sevice {
   margin: 20px auto;
-  .block-services {
+  .block-service {
     @include flexbox();
     @include justify-content(space-between);
     margin: 20px 0;
-    .wrap-services {
+    .wrap-service {
       .wrap-image {
         display: flex;
         margin: 10px 0;
         align-items: center;
       }
     }
-    .image-services {
+    .image-service {
       &:hover {
         @include transform(scale(1.5));
         @include transition(2s);
@@ -36,7 +36,7 @@
         font-size: 15px;
       }
     }
-    .link-services {
+    .link-service {
       color: #e2494b;
       font-size: 15px;
       &:hover {
