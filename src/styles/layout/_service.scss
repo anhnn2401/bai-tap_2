@@ -11,7 +11,7 @@
         align-items: center;
       }
     }
-    .image-ser {
+    .image-services {
       &:hover {
         @include transform(scale(1.5));
         @include transition(2s);
@@ -36,7 +36,7 @@
         font-size: 15px;
       }
     }
-    .link-ser {
+    .link-services {
       color: #e2494b;
       font-size: 15px;
       &:hover {
