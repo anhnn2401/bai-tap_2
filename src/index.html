@@ -22,6 +22,8 @@
   <!-- include styles.html -->
   <!-- build:css(.) style/vendor.min.css -->
 <link rel="stylesheet" type="text/css" media="screen" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="node_modules/slick-carousel/slick/slick.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="node_modules/slick-carousel/slick/slick-theme.css" />
 <!-- endbuild -->
 <!-- build:css(.tmp) style/style.min.css -->
 <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
@@ -45,12 +47,27 @@
         <li class="item-menu"><a class="item-link" href="#work">dropdown</a></li>
         <li class="item-menu"><a class="item-link" href="#footer">link text</a></li>
       </ul>
-      <!--<a href="javascript:void(0);" class="menu-item" onclick="myFunction()">☰</a>-->
-      <a href="javascript:void(0);" class="btn-open-menu"> </a>
+      <a href="javascript:void(0);" class="btn-open-menu"></a>
     </nav>
   </div>
 </header>
-
+<div id="homepage" class="homepage container">
+  <h1 class="wrap-content">“ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam
+erat. In fringilla massa ut nisi ullamcorper pellentesque „</h1>
+  <div class="slide_home">
+    <div class="slide">
+  <img src="images/slide_ima.png" alt="slide-image">
+</div><div class="slide">
+  <img src="images/slide_ima.png" alt="slide-image">
+</div><div class="slide">
+  <img src="images/slide_ima.png" alt="slide-image">
+</div><div class="slide">
+  <img src="images/slide_ima.png" alt="slide-image">
+</div><div class="slide">
+  <img src="images/slide_ima.png" alt="slide-image">
+</div>
+  </div>
+</div>
     <!-- include banner.html -->
 <section class="banner-container">
   <div class="container">
@@ -61,6 +78,8 @@
     </div>
   </div>
 </section>
+
+
 
     <!-- include footer.html -->
 <footer class="footer-container">
@@ -78,6 +97,7 @@
   <!-- build:js(.) script/vendor.min.js -->
 <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
 <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="node_modules/slick-carousel/slick/slick.min.js"></script>
 <!-- endbuild -->
 <!-- build:js script/script.min.js -->
 <script type="text/javascript" src="scripts/script.js"></script>

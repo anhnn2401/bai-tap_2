@@ -24,8 +24,8 @@
     text-align: center;
     position: relative;
     margin: 20px;
-    @include breakpoint(767) {
-      margin: 0;
+    @include breakpoint(992) {
+      margin: 20px 0;
     }
     .list-menu {
       @include breakpoint(767) {
@@ -68,7 +68,7 @@
   height: 3px;
   position: absolute;
   top: 25px;
-  right: 5px;
+  right: 25px;
   background-color: #ccc;
   display: none;
   @include breakpoint(767) {
