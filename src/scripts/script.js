@@ -6,6 +6,7 @@ $('.slide_home').slick({
   slidesToShow: 1,
   adaptiveHeight: true,
   slidesToScroll: 1
-});$('.btn-open-menu').on('click', function(){
+});
+$('.btn-open-menu').on('click', function(){
   $('.list-menu').toggleClass('open')
 })

@@ -94,12 +94,12 @@
   }
 }
 .list-menu.open ~ .btn-open-menu {
-  transform: rotate(45deg);
+  @include transform(rotate(45deg));
   &:before {
     top: 0px;
   }
   &:after {
     top: 0;
-    transform: rotate(90deg);
+    @include transform(rotate(90deg));
   }
 }
