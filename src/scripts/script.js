@@ -1,7 +1,8 @@
 $('.slide_home').slick({
   dots: true,
   infinite: true,
-  speed: 300,
+  autoplay: true,
+  speed: 2000,
   arrows: false,
   slidesToShow: 1,
   adaptiveHeight: true,
@@ -50,3 +51,9 @@ $(window).scroll(function(){
       .end().filter("[href='#"+id+"']").parent().addClass("active");
   }
 });
+new WOW(
+  {
+  boxClass: 'WOW',
+  animateClass: 'animated'
+  })
+new WOW().init();
