@@ -41,10 +41,8 @@
     .photo-player {
       text-align: center;
       &:hover {
-        @include transform(scale(1.2));
-        @include breakpoint(480) {
-          @include transform(scale(1,1));
-        }
+        @include transform(scale(1.1));
+        @include transition(all 2s);
       }
     }
   }
