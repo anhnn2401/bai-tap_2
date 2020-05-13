@@ -1,9 +1,9 @@
 .sevice {
-  margin: 20px auto;
+  margin: 100px auto;
   .block-service {
     @include flexbox();
     @include justify-content(space-between);
-    margin: 20px 0;
+    margin: 100px 0;
     .wrap-service {
       .wrap-image {
         display: flex;

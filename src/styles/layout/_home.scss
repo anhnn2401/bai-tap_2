@@ -1,5 +1,5 @@
 .homepage {
-  margin-top: 95px;
+  margin: 100px auto;
   border-top: 2px solid #e2e2e2;
   .wrap-content {
     display: block;
@@ -29,24 +29,33 @@
     }
     .slick-dots {
       bottom: -40px;
-      li button:before {
-        font-size: 14px;
-        background-color: #000;
-        border: 1px solid #000;
-        border-radius: 50%;
-        @include breakpoint(480) {
-          font-size: 6px;
-          border: none;
-          top: -10px;
-          height: auto;
-          line-height: 0;
+      li button {
+        width: 21px;
+        height: 21px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        border-radius: 100%;
+        background-color: #cecece;
+        @include breakpoint(767) {
+          background-color: #fff;
         }
       }
-      li.slick-active button:before {
-        color: #fff;
-        @include breakpoint(480) {
-          color: #000;
+      li button:before {
+        content: '';
+        font-size: 0;
+        background-color: #fff;
+        border-radius: 50%;
+        height: 11px;
+        width: 11px;
+        position: relative;
+        @include breakpoint(767) {
+          background-color: #000;
         }
+      }
+      li.slick-active button {
+        background-color: #000;
       }
     }
   }
