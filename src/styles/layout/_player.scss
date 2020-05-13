@@ -16,6 +16,9 @@
   }
   .block-player {
     margin: 100px auto;
+    @include breakpoint(767) {
+      margin: 20px auto;
+    }
     .name-player {
       margin-top: 20px;
       margin-bottom: 10px;
