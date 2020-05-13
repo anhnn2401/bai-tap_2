@@ -1,0 +1,112 @@
+.footer {
+  background-color: #e2e2e2;
+  font-size: 14px;
+  color: #999999;
+}
+.row {
+  margin: 0 auto;
+  padding: 0;
+  @include breakpoint(767) {
+    max-width: 100%;
+  }
+}
+.title-footer {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #333333;
+  @include breakpoint(991) {
+    font-size: 19px;
+  }
+}
+.image {
+  display: inline-block;
+  border: 1px solid #8e8f8a;
+  padding: 4px;
+  margin-right: 20px;
+}
+.wrap-latest {
+  @include inline-flex();
+  margin: 20px auto;
+  align-items: center;
+  @include breakpoint(991) {
+    margin: 0;
+  }
+  .title-latest {
+    color: #e2494b;
+    font-size: 16px;
+    margin-bottom: 20px;
+    @include breakpoint(991) {
+      margin-bottom: 0;
+      margin-top: 6px;
+    }
+  }
+}
+.details {
+  margin: 25px 0;
+  @include breakpoint(991) {
+    margin: 0;
+    font-size: 10px;
+  }
+  @include breakpoint(767) {
+    font-size: 15px;
+    margin: 10px 0;
+  }
+  .email-detail {
+    color: #e2494b;
+    @include breakpoint(991) {
+      font-size: 12px;
+    }
+    @include breakpoint(767) {
+      font-size: 15px;
+    }
+  }
+}
+.contact {
+  margin: 25px auto;
+  .form {
+    .input-text {
+      width: 100%;
+      border-radius: 5px;
+      margin: 5px 0;
+      padding-left: 10px;
+      border: 1px solid #fff;
+    }
+    .input-area {
+      width: 100%;
+      border-radius: 5px;
+      margin: 5px 0;
+      padding-left: 10px;
+      height: 85px;
+      resize: none;
+      border: 1px solid #fff;
+    }
+    .btn-submit {
+      color: #fff;
+      border: 1px solid #e2494b;
+      border-radius: 5px;
+      background-color: #e2494b;
+      padding: 8px 20px;
+      text-transform: uppercase;
+    }
+  }
+}
+.last-foot {
+  @include flexbox();
+  @include justify-content(space-between);
+  border-top: 2px outset #fff;
+  font-size: 16px;
+  line-height: 60px;
+  padding: 0 40px;
+  @include breakpoint(767) {
+    line-height: 40px;
+    padding: 0;
+    font-size: 12px;
+  }
+  @include breakpoint(480) {
+    display: inline-block;
+    width: 100%;
+  }
+}
