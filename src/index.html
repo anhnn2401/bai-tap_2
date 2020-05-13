@@ -22,47 +22,167 @@
   <!-- include styles.html -->
   <!-- build:css(.) style/vendor.min.css -->
 <link rel="stylesheet" type="text/css" media="screen" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="node_modules/slick-carousel/slick/slick.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="node_modules/slick-carousel/slick/slick-theme.css" />
 <!-- endbuild -->
 <!-- build:css(.tmp) style/style.min.css -->
 <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
 <!-- endbuild -->
 </head>
 <body>
-  <div class="wrapper">
     <!-- include header.html -->
-    <header class="header-container">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <p>Header Container</p>
-      </div>
+<header>
+  <div class="header-container">
+    <div class="logo">
+      <a href="#homepage">
+        <img class="imglogo" src="./images/composition-logo.png" alt="logo">
+      </a>
     </div>
+    <nav class="menu">
+      <ul class="list-menu" id="idlistmenu">
+        <li class="item-menu"><a class="item-link" href="#homepage">homepage</a></li>
+        <li class="item-menu"><a class="item-link" href="#sevice">style demo</a></li>
+        <li class="item-menu"><a class="item-link" href="#player">full width</a></li>
+        <li class="item-menu"><a class="item-link" href="#work">dropdown</a></li>
+        <li class="item-menu"><a class="item-link" href="#footer">link text</a></li>
+      </ul>
+      <a href="javascript:void(0);" class="btn-open-menu"></a>
+    </nav>
   </div>
 </header>
 
-    <!-- include banner.html -->
-    <section class="banner-container">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <p class="title-block">Banner</p>
-      </div>
+<div id="homepage" class="homepage container">
+  <h1 class="wrap-content">“ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam
+erat. In fringilla massa ut nisi ullamcorper pellentesque „</h1>
+  <div class="slide_home">
+    <div class="slide">
+  <img src="images/slide_ima.png" alt="slide-image">
+</div>
+<div class="slide">
+  <img src="images/slide_ima.png" alt="slide-image">
+</div>
+<div class="slide">
+  <img src="images/slide_ima.png" alt="slide-image">
+</div>
+<div class="slide">
+  <img src="images/slide_ima.png" alt="slide-image">
+</div>
+<div class="slide">
+  <img src="images/slide_ima.png" alt="slide-image">
+</div>
+
+  </div>
+</div>
+
+<div id="sevice" class="sevice container">
+  <div class="block-title">
+    <h2 class="title-service">our services</h2>
+  </div>
+  <div class="block-service row">
+    <div class="wrap-service col-lg-4 col-md-4 col-sm-4">
+  <div class="wrap-image">
+    <a href="#"><img class="image-service" src="images/img-ser.png" alt="image"></a>
+    <a href="#" class="title-service">Indonectetus facilis</a>
+  </div>
+  <p class="desc-service">Vestibulum accumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede estibulum nulla orna nisl velit elit ac aliquat non tincidunt.</p>
+  <div>
+    <a href="#" class="link-service">Read More »</a>
+  </div>
+</div>
+<div class="wrap-service col-lg-4 col-md-4 col-sm-4">
+  <div class="wrap-image">
+    <a href="#"><img class="image-service" src="images/img-ser.png" alt="image"></a>
+    <a href="#" class="title-service">Indonectetus facilis</a>
+  </div>
+  <p class="desc-service">Vestibulum accumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede estibulum nulla orna nisl velit elit ac aliquat non tincidunt.</p>
+  <div>
+    <a href="#" class="link-service">Read More »</a>
+  </div>
+</div>
+<div class="wrap-service col-lg-4 col-md-4 col-sm-4">
+  <div class="wrap-image">
+    <a href="#"><img class="image-service" src="images/img-ser.png" alt="image"></a>
+    <a href="#" class="title-service">Indonectetus facilis</a>
+  </div>
+  <p class="desc-service">Vestibulum accumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede estibulum nulla orna nisl velit elit ac aliquat non tincidunt.</p>
+  <div>
+    <a href="#" class="link-service">Read More »</a>
+  </div>
+</div>
+
+  </div>
+</div>
+
+<div id="player" class="player">
+  <div class="block-title container">
+    <h2 class="title-service">our players</h2>
+  </div>
+  <div class="player-container row">
+    <div class="block-player col-md-3 col-sm-6 col-12">
+  <div class="photo-player">
+    <a href=""><img src="images/img-player.jpg" alt="player"></a>
+  </div>
+  <div class="content-player">
+    <p class="name-player"><b>Name:</b> John Doe</p>
+    <p class="description-player">Justo convallis augue estas aenean elit intesque sed facilispede estibulum nulla.</p>
+    <div>
+      <a href="#" class="link-player">View Profile »</a>
     </div>
   </div>
-</section>
+</div>
+<div class="block-player col-md-3 col-sm-6 col-12">
+  <div class="photo-player">
+    <a href=""><img src="images/img-player.jpg" alt="player"></a>
+  </div>
+  <div class="content-player">
+    <p class="name-player"><b>Name:</b> John Doe</p>
+    <p class="description-player">Justo convallis augue estas aenean elit intesque sed facilispede estibulum nulla.</p>
+    <div>
+      <a href="#" class="link-player">View Profile »</a>
+    </div>
+  </div>
+</div>
+<div class="block-player col-md-3 col-sm-6 col-12">
+  <div class="photo-player">
+    <a href=""><img src="images/img-player.jpg" alt="player"></a>
+  </div>
+  <div class="content-player">
+    <p class="name-player"><b>Name:</b> John Doe</p>
+    <p class="description-player">Justo convallis augue estas aenean elit intesque sed facilispede estibulum nulla.</p>
+    <div>
+      <a href="#" class="link-player">View Profile »</a>
+    </div>
+  </div>
+</div>
+<div class="block-player col-md-3 col-sm-6 col-12">
+  <div class="photo-player">
+    <a href=""><img src="images/img-player.jpg" alt="player"></a>
+  </div>
+  <div class="content-player">
+    <p class="name-player"><b>Name:</b> John Doe</p>
+    <p class="description-player">Justo convallis augue estas aenean elit intesque sed facilispede estibulum nulla.</p>
+    <div>
+      <a href="#" class="link-player">View Profile »</a>
+    </div>
+  </div>
+</div>
 
-    <main class="main-container">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h4 class="title-block">HTML Boilerplate</h4>
-          </div>
-        </div>
-      </div>
-    </main>
+  </div>
+</div>
+
+<div id="work" class="work container">
+  <div class="block-title">
+    <h2 class="title-service">latest work</h2>
+  </div>
+  <div class="image-work">
+    <img class="work-image" src="images/work.png" alt="work-image">
+    <img class="work-image" src="images/work.png" alt="work-image">
+    <img class="work-image" src="images/work.png" alt="work-image">
+  </div>
+</div>
 
     <!-- include footer.html -->
-    <footer id="footer" class="footer">
+<footer id="footer" class="footer">
   <div class="container row">
     <div class="col-md-6 col-sm-12">
       <h2 class="title-footer">Latest From The Blog</h2>
@@ -88,10 +208,12 @@
     <div class="col-md-3 col-sm-6 col-xs-12">
       <h2 class="title-footer">Company Details</h2>
       <div class="details">
-        <p>Company Name</p>
-        <p>Street Name & Number</p>
-        <p>Town</p>
-        <p>Postcode/Zip</p>
+        <ol>
+          <li>Company Name</li>
+          <li>Street Name & Number</li>
+          <li>Town</li>
+          <li>Postcode/Zip</li>
+        </ol>
       </div>
       <div class="details">
         <p>Tel: xxxxx xxxxxxxxxx</p>
@@ -99,9 +221,11 @@
         <p>Email:<a class="email-detail" href="mailto:contact@mydomain.com">contact@mydomain.com</a></p>
       </div>
       <div class="details">
-        <p>Office Hours</p>
-        <p>Monday - Friday: 08:00 - 17:30</p>
-        <p>Saturday: 08:00 - 13:00</p>
+        <ol>
+          <li>Office Hours</li>
+          <li>Monday - Friday: 08:00 - 17:30</li>
+          <li>Saturday: 08:00 - 13:00</li>
+        </ol>
       </div>
     </div>
     <div class="col-md-3 col-sm-6 col-xs-12">
@@ -121,12 +245,12 @@
     <p>Template by OS Templates</p>
   </div>
 </footer>
-  </div>
 
   <!-- include scripts.html -->
   <!-- build:js(.) script/vendor.min.js -->
 <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
 <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="node_modules/slick-carousel/slick/slick.min.js"></script>
 <!-- endbuild -->
 <!-- build:js script/script.min.js -->
 <script type="text/javascript" src="scripts/script.js"></script>

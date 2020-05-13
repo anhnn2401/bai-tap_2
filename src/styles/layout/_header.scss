@@ -1,0 +1,104 @@
+.header-container {
+  background-color: #fff;
+  width: 100%;
+  top:0;
+  left: 0;
+  position: fixed;
+  z-index: 2;
+  @include flexbox();
+  @include justify-content(space-between);
+  .logo {
+    margin: 20px;
+    .imglogo {
+      @include breakpoint(480) {
+        width: 100%;
+      }
+    }
+  }
+  .menu {
+    text-transform: uppercase;
+    background-color: #e2494b;
+    border-radius: 10px;
+    font-size: 13px;
+    text-align: center;
+    position: relative;
+    margin: 20px;
+    @include breakpoint(992) {
+      margin: 20px 0;
+    }
+    .list-menu {
+      @include breakpoint(767) {
+        display: none;
+      }
+      .item-menu {
+        display: inline-block;
+        margin: 0 10px;
+        line-height: 52px;
+        @include breakpoint(767) {
+          display: block;
+          margin: 0;
+          padding: 1%;
+        }
+        .item-link {
+          color: #fff;
+          &:hover,
+          &:active {
+            color: #ee9395;
+          }
+        }
+      }
+    }
+  }
+}
+.open {
+  display: block !important;
+  width: 100%;
+  @include breakpoint(767) {
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e2494b;
+    position: fixed;
+  }
+}
+.list-menu ~ .btn-open-menu {
+  width: 30px;
+  height: 3px;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  background-color: #ccc;
+  display: none;
+  @include breakpoint(767) {
+    display: block;
+  }
+  &:before {
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background-color: #ccc;
+    content: '';
+  }
+  &:after {
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    top: -10px;
+    right: 0;
+    background-color: #ccc;
+    content: '';
+  }
+}
+.list-menu.open ~ .btn-open-menu {
+  @include transform(rotate(45deg));
+  &:before {
+    top: 0px;
+  }
+  &:after {
+    top: 0;
+    @include transform(rotate(90deg));
+  }
+}

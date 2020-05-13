@@ -1,0 +1,51 @@
+.player {
+  margin: 60px auto;
+}
+.player-container {
+  @include flexbox();
+  @include justify-content(space-between);
+  margin: 40px auto;
+  font-size: 15px;
+  color: #979797;
+  .link-player {
+    color: #e2494b;
+    &:hover {
+      color: #ff0000;
+      font-weight: 700;
+    }
+  }
+  .block-player {
+    margin: 100px auto;
+    @include breakpoint(767) {
+      margin: 20px auto;
+    }
+    .name-player {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: #666666;
+      @include breakpoint(480) {
+        margin: 0;
+      }
+    }
+    .content-player {
+      font-size: 20px;
+      .description-player {
+        font-size: 16px;
+        color: #979797;
+      }
+      @include breakpoint(480) {
+        position: relative;
+        margin-left: 5px;
+      }
+    }
+    .photo-player {
+      text-align: center;
+      &:hover {
+        @include transform(scale(1.2));
+        @include breakpoint(480) {
+          @include transform(scale(1,1));
+        }
+      }
+    }
+  }
+}
