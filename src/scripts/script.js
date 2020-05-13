@@ -7,9 +7,10 @@ $('.slide_home').slick({
   adaptiveHeight: true,
   slidesToScroll: 1
 });
+// Menu item
 $('.btn-open-menu').on('click', function(){
   $('.list-menu').toggleClass('open')
-})
+});
 var lastId,
 topMenu = $(".list-menu"),
 topMenuHeight = topMenu.outerHeight()+40,
@@ -18,7 +19,7 @@ menuItems = topMenu.find("a"),
 // Anchors corresponding to menu items
 scrollItems = menuItems.map(function(){
   var item = $($(this).attr("href"));
-  if (item.length) { return item; }
+  if (item.length) { return item;}
 });
 // Bind click handler to menu items
 menuItems.click(function(e){
