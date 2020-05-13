@@ -1,34 +1,28 @@
 .homepage {
-  margin-top: 40px;
+  margin: 100px auto;
   border-top: 2px solid #e2e2e2;
-  @include breakpoint(450) {
-    margin-top: 10px;
-  }
   .wrap-content {
     display: block;
     font-size: 22px;
     text-align: center;
-    width: 710px;
-    margin: 40px auto;
+    margin: 25px auto;
     color: #333333;
-    margin-top: 40px;
+    @include breakpoint(991) {
+      margin: 15px auto;
+    }
     @include breakpoint(767) {
       width: 100%;
     }
-    @include breakpoint(450) {
+    @include breakpoint(480) {
       font-size: 14px;
-      margin-top: 60px;
-      margin-bottom: 20px;
     }
   }
   .slide_home {
     width: 960px;
-    margin: 40px auto;
+    margin: 30px auto;
     @include breakpoint(1199) {
       width: 100%;
-    }
-    @include breakpoint(450) {
-      margin: 0;
+      margin: 0 auto;
     }
     .slick-slide img {
       width: 100%;
@@ -36,11 +30,11 @@
     .slick-dots {
       bottom: -40px;
       li button:before {
-        font-size: 14px;
+        font-size: 10px;
         background-color: #000;
-        border: 1px solid #000;
         border-radius: 50%;
-        @include breakpoint(450) {
+        line-height: 23px;
+        @include breakpoint(480) {
           font-size: 6px;
           border: none;
           top: -10px;
@@ -50,7 +44,7 @@
       }
       li.slick-active button:before {
         color: #fff;
-        @include breakpoint(450) {
+        @include breakpoint(480) {
           color: #000;
         }
       }

@@ -1,35 +1,5 @@
-.block-title {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  &:after {
-    content: '';
-    background-color: #e2e2e2;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    top: 50%;
-  }
-  .title-service {
-    font-size: 18px;
-    color: #fff;
-    border: 1px solid #e2494b;
-    border-radius: 5px;
-    background-color: #e2494b;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    z-index: 1;
-  }
-}
 .player {
-  margin: 70px auto;
-  @include breakpoint(991) {
-    overflow: auto;
-    margin: 60px auto;
-  }
-  @include breakpoint(480) {
-    padding: 5px;
-  }
+  margin: 60px auto;
 }
 .player-container {
   @include flexbox();
@@ -37,41 +7,29 @@
   margin: 40px auto;
   font-size: 15px;
   color: #979797;
-  @include breakpoint(991) {
-    display: block;
-  }
   .link-player {
     color: #e2494b;
     &:hover {
       color: #ff0000;
       font-weight: 700;
     }
-    @include breakpoint(480) {
-      position: absolute;
-      bottom: 2px;
-    }
   }
-  .player-div {
-    width: 20%;
-    padding: 5px;
-    @include breakpoint(991) {
-      width: 50%;
-      float: left;
-      margin-bottom: 15px;
-    }
-    @include breakpoint(480) {
-      width: 100%;
-      margin: 5px auto;
-      @include inline-flex();
-    }
+  .block-player {
+    margin: 100px auto;
     .name {
       margin-top: 20px;
       margin-bottom: 10px;
+      color: #666666;
       @include breakpoint(480) {
         margin: 0;
       }
     }
     .content-player {
+      font-size: 20px;
+      .description-player {
+        font-size: 16px;
+        color: #979797;
+      }
       @include breakpoint(480) {
         position: relative;
         margin-left: 5px;
